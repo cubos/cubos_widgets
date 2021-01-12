@@ -5,6 +5,7 @@ Flutter package containing the most used Widgets in Cubos Tecnologia's projects.
 ## Features
 - HorizontalSpacing
 - VerticalSpacing
+- AlwaysDisabledFocusNode
 
 ## Let's grow together!
 
