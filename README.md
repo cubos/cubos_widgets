@@ -6,6 +6,29 @@ Flutter package containing the most used Widgets in Cubos Tecnologia's projects.
 - HorizontalSpacing
 - VerticalSpacing
 - AlwaysDisabledFocusNode
+- HtmlWidget
+
+### HtmlWidget
+It uses the `flutter_html` library to allow us to use HTML tags to customize text styles without using the RichText widget. It also allows us to customize texts from the backend. Example:
+
+```
+HtmlWidget(
+    data: """
+      Hello <strong>World</strong>!
+      <br>
+      <br>
+      <strong>Uma lista qualquer:</strong>
+      <ul>
+        <li>2x Cadeiras</li>
+        <li>1x Cobertor</li>
+        <li>1x Folha de papel</li>
+        <li>1x caixa de lápis de cor</li>
+        <li>1x caixa de tinta guache</li>
+      </ul>
+      """,
+    textStyle: TextStyle(color: Colors.blue, fontSize: 20),
+);
+```
 
 ## Let's grow together!
 
