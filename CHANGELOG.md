@@ -9,4 +9,3 @@
 Hello World! This version contains:
 - HorizontalSpacing
 - VerticalSpacing
-

@@ -36,4 +36,4 @@ You can support us making your own contributions! Report bugs or unexpected beha
 
 ## Get to know us
 
-Find out more about Cubos Tecnologia on [cubos.io](http://cubos.io)
+Find out more about Cubos Tecnologia on [cubos.io](https://cubos.io)
