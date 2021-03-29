@@ -29,6 +29,16 @@ HtmlWidget(
     textStyle: TextStyle(color: Colors.blue, fontSize: 20),
 );
 ```
+### ResponsiveTextScaleFactor
+Responsive text scale factor should be used to create a range of text scale factor for a specific widget or all your screen, and ensures better usability without layout overflow when users with vision problems use the app with TextScaleFactor increased on your devices.
+
+```
+ResponsiveTextScaleFactor(
+  minScaleFactor: 0.5,
+  maxScaleFactor: 2.0,
+  child: Text('Hello world'),
+),
+```
 
 ## Let's grow together!
 
