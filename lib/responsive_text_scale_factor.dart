@@ -37,8 +37,10 @@ class ResponsiveTextScaleFactor extends StatelessWidget {
 
     return MediaQuery(
       data: data.copyWith(
-        textScaleFactor:
-            data.textScaleFactor.clamp(_minScaleFactor, _maxScaleFactor),
+        textScaleFactor: data.textScaleFactor.clamp(
+          _minScaleFactor,
+          _maxScaleFactor,
+        ),
       ),
       child: _child,
     );
