@@ -8,9 +8,9 @@ class HtmlWidget extends StatelessWidget {
   final TextStyle textStyle;
 
   const HtmlWidget({
-    Key key,
-    @required this.data,
-    @required this.textStyle,
+    Key? key,
+    required this.data,
+    required this.textStyle,
   }) : super(key: key);
 
   @override
@@ -24,8 +24,8 @@ class HtmlWidget extends StatelessWidget {
           fontWeight: textStyle.fontWeight,
         )
       },
-      onLinkTap: (url) async {
-        if (await canLaunch(url)) {
+      onLinkTap: (url, context, attributes, element) async {
+        if (await canLaunch(url!)) {
           await launch(url);
         }
       },
