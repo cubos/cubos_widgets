@@ -1,4 +1,5 @@
 library cubos_widgets;
+
 import 'package:flutter/material.dart';
 
 /// Returns a SizedBox with the given [height]
@@ -7,7 +8,11 @@ import 'package:flutter/material.dart';
 class VerticalSpacing extends StatelessWidget {
   final double height;
 
-  const VerticalSpacing(this.height): assert(height >= 0);
+  const VerticalSpacing(
+    this.height, {
+    Key? key,
+  })  : assert(height >= 0),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {

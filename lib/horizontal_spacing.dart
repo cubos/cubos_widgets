@@ -1,6 +1,6 @@
 library cubos_widgets;
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
 
 /// Returns a SizedBox with the given [width]
 ///
@@ -8,7 +8,11 @@ import 'package:flutter/material.dart';
 class HorizontalSpacing extends StatelessWidget {
   final double width;
 
-  const HorizontalSpacing(this.width):  assert(width >= 0);
+  const HorizontalSpacing(
+    this.width, {
+    Key? key,
+  })  : assert(width >= 0),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
