@@ -22,8 +22,8 @@ class ResponsiveTextScaleFactor extends StatelessWidget {
   final double _maxScaleFactor;
 
   const ResponsiveTextScaleFactor({
-    Key key,
-    @required Widget child,
+    Key? key,
+    required Widget child,
     double minScaleFactor = 0.8,
     double maxScaleFactor = 1.2,
   })  : _child = child,
