@@ -24,11 +24,13 @@ class HtmlWidget extends StatelessWidget {
           fontWeight: textStyle.fontWeight,
         )
       },
-      onLinkTap: (url, context, attributes, element) async {
-        if (await canLaunch(url!)) {
-          await launch(url);
-        }
-      },
+      onLinkTap: _onLinkTap,
     );
+  }
+
+  void _onLinkTap(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    }
   }
 }
