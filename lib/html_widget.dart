@@ -24,8 +24,8 @@ class HtmlWidget extends StatelessWidget {
           fontWeight: textStyle.fontWeight,
         )
       },
-      onLinkTap: (url) async {
-        if (await canLaunch(url)) {
+      onLinkTap: (url, context, attributes, element) async {
+        if (await canLaunch(url!)) {
           await launch(url);
         }
       },
