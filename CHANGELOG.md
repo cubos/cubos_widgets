@@ -1,3 +1,7 @@
+## [1.3.0] - 2021-02-23
+- Feat: add export file 
+- Feat: add analyzer in project 
+- Feat: created new components 
 ## [1.2.1] - 2021-02-23
 - Fix: homepage url
 ## [1.2.0] - 2021-02-22
