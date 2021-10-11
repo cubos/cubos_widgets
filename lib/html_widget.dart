@@ -8,17 +8,17 @@ class HtmlWidget extends StatelessWidget {
   final TextStyle textStyle;
 
   const HtmlWidget({
-    Key key,
-    @required this.data,
-    @required this.textStyle,
+    Key? key,
+    required this.data,
+    required this.textStyle,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Html(
-      data: "<div>$data</div>",
+      data: '<div>$data</div>',
       style: {
-        "div": Style(
+        'div': Style(
           color: textStyle.color,
           fontSize: FontSize(textStyle.fontSize),
           fontWeight: textStyle.fontWeight,
