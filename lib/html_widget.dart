@@ -16,19 +16,21 @@ class HtmlWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Html(
-      data: "<div>$data</div>",
+      data: '<div>$data</div>',
       style: {
-        "div": Style(
+        'div': Style(
           color: textStyle.color,
           fontSize: FontSize(textStyle.fontSize),
           fontWeight: textStyle.fontWeight,
         )
       },
-      onLinkTap: (url, context, attributes, element) async {
-        if (await canLaunch(url!)) {
-          await launch(url);
-        }
-      },
+      onLinkTap: _onLinkTap,
     );
+  }
+
+  void _onLinkTap(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    }
   }
 }
