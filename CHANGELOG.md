@@ -1,3 +1,5 @@
+## [1.4.0] - 2021-10-13
+- Feat: add form field
 ## [1.3.0] - 2021-02-23
 - Feat: add export file 
 - Feat: add analyzer in project 
