@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_html/style.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HtmlWidget extends StatelessWidget {
@@ -24,13 +23,15 @@ class HtmlWidget extends StatelessWidget {
           fontWeight: textStyle.fontWeight,
         )
       },
-      onLinkTap: _onLinkTap,
-    );
-  }
+      onLinkTap: (url, context, attributes, element) async {
+        if (url == null) {
+          return;
+        }
 
-  void _onLinkTap(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    }
+        if (await canLaunch(url)) {
+          await launch(url);
+        }
+      },
+    );
   }
 }
