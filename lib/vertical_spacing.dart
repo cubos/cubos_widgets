@@ -7,10 +7,8 @@ import 'package:flutter/material.dart';
 /// It is very useful to set a margin between widgets in a Column.
 class VerticalSpacing extends StatelessWidget {
   final double height;
-  const VerticalSpacing({
-    Key? key,
-    required this.height,
-  })  : assert(height >= 0),
+  const VerticalSpacing(this.height, {Key? key})
+      : assert(height >= 0),
         super(key: key);
 
   @override
