@@ -8,10 +8,8 @@ import 'package:flutter/material.dart';
 class HorizontalSpacing extends StatelessWidget {
   final double width;
 
-  const HorizontalSpacing({
-    Key? key,
-    required this.width,
-  })  : assert(width >= 0),
+  const HorizontalSpacing(this.width, {Key? key})
+      : assert(width >= 0),
         super(key: key);
 
   @override

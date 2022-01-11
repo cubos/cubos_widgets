@@ -2,6 +2,10 @@
 
 - Chore: Update dependencies
 
+## [1.4.2] - 2021-10-25
+
+- Feat: update dependencies
+
 ## [1.4.0] - 2021-10-13
 
 - Feat: add form field
