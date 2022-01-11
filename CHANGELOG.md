@@ -1,3 +1,7 @@
+## [1.4.3] - 2022-01-11
+
+- Chore: Update dependencies
+
 ## [1.4.2] - 2021-10-25
 
 - Feat: update dependencies
