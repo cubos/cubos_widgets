@@ -1,6 +1,6 @@
 name: cubos_widgets
 description: Flutter package containing the most used Widgets in Cubos Tecnologia's projects.
-version: 1.4.3
+version: 1.4.5
 homepage: https://github.com/daniloapr/cubos_widgets
 
 publish_to: none

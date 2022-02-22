@@ -1,3 +1,8 @@
+## [1.4.5] - 2022-02-22
+
+- Chore: Update dependencies
+- Fix: removed unused HtmlWidget
+
 ## [1.4.3] - 2022-01-11
 
 - Chore: Update dependencies
