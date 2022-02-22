@@ -19,7 +19,7 @@ class FormFields {
   })  : focus = focus ?? FocusNode(),
         controller = controller ?? TextEditingController();
 
-  factory FormFields.mask({String? mask}) {
+  factory FormFields.mask({required String mask}) {
     return FormFields(
       focus: FocusNode(),
       controller: MaskedTextController(mask: mask),
@@ -35,7 +35,7 @@ class FormFields {
   bool get isMaskedController =>
       controller != null && controller is MaskedTextController;
 
-  void updateMask(String? value) {
+  void updateMask(String value) {
     if (isMaskedController) {
       (controller as MaskedTextController).updateMask(value);
     }
@@ -44,27 +44,5 @@ class FormFields {
   void dispose() {
     focus?.dispose();
     controller?.dispose();
-  }
-}
-
-class FormFieldsMoney extends FormFields {
-  FormFieldsMoney({
-    FocusNode? focus,
-    MoneyMaskedTextController? controller,
-  }) : super(focus: focus, controller: controller);
-
-  factory FormFieldsMoney.money({String? leftSymbol = 'U\$'}) {
-    return FormFieldsMoney(
-      focus: FocusNode(),
-      controller: MoneyMaskedTextController(leftSymbol: leftSymbol),
-    );
-  }
-
-  double get numberValue {
-    return (controller as MoneyMaskedTextController).numberValue;
-  }
-
-  void updateValue(double value) {
-    (controller as MoneyMaskedTextController).updateValue(value);
   }
 }

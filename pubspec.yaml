@@ -3,8 +3,10 @@ description: Flutter package containing the most used Widgets in Cubos Tecnologi
 version: 1.4.3
 homepage: https://github.com/daniloapr/cubos_widgets
 
+publish_to: none
+
 environment:
-  sdk: ">=2.13.0 <3.0.0"
+  sdk: ">=2.15.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -12,8 +14,10 @@ dependencies:
     sdk: flutter
 
   url_launcher: ^6.0.18
-  flutter_html: ^2.2.1
-  flutter_masked_text: ^0.8.0
+  flutter_masked_text:
+    git:
+      url: git://github.com/gabriel-oliveira800/flutter-masked-text
+      ref: master # branch name
 
 dev_dependencies:
   flutter_test:

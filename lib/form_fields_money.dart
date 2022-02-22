@@ -17,7 +17,7 @@ class FormFieldsMoney extends FormFields {
     MoneyMaskedTextController? controller,
   }) : super(focus: focus, controller: controller);
 
-  factory FormFieldsMoney.money({String? leftSymbol = 'U\$'}) {
+  factory FormFieldsMoney.money({String leftSymbol = 'U\$'}) {
     return FormFieldsMoney(
       focus: FocusNode(),
       controller: MoneyMaskedTextController(leftSymbol: leftSymbol),
