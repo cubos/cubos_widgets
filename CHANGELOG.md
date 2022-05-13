@@ -1,3 +1,8 @@
+## [1.4.8] - 2022-05-13
+
+- Fix: Remove update external dependencies
+- Feat: Create a inputs formatter
+
 ## [1.4.5] - 2022-02-22
 
 - Chore: Update dependencies
