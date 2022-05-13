@@ -1,7 +1,6 @@
-import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'package:flutter/material.dart';
 
-import 'form_fields.dart';
+import '../../cubos_widgets.dart';
 
 /// A component used to centralize Focus and TextEditingController in one place,
 /// And also the possibility to use a mask just using .mask(....)
